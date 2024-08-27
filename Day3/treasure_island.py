@@ -1,15 +1,15 @@
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-crossroad = input("You're at a crossroad, where do you want to go? \nType 'left' or 'right': \n")
+crossroad = input("You're at a crossroad, where do you want to go? \nType 'left' or 'right': \n").lower()
 
 if crossroad == "left":
   print("#########################")
   print("You've come to a lake. There is an island in the middle of the lake.")
-  swim_or_wait = input("Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
+  swim_or_wait = input("Type 'wait' to wait for a boat. Type 'swim' to swim across.\n").lower()
   if swim_or_wait == "wait":
     print("#########################")
     print("You arrive at the island unharmed. There is a house with 3 doors.")
-    door_choice = input("One red, one yellow and one blue. Which colour do you choose?\n")
+    door_choice = input("One red, one yellow and one blue. Which colour do you choose?\n").lower()
     if door_choice == 'red':
       print("!!!!!!!!!!!!!!!!!!!!!!!!!")
       print("It's a room full of fire. Game over.")
